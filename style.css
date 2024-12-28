@@ -1,0 +1,156 @@
+/* Reset Line */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #fcc707;
+  --secondary-color: #292929;
+  --accent-color: #aeafaf;
+  --background-color: #ffffff;
+  --text-color: #6b6b6c;
+  --dark-bg: #000000;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.header {
+  height: 80vh;
+  width: 100vw;
+  display: grid;
+  /* border: 12px solid red; */
+  margin: 2rem auto;
+
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: 0.5rem 1fr 1rem 1fr 0.5rem;
+  background-color: var(--primary-color);
+}
+
+.community {
+  /* border: 12px solid green; */
+
+  grid-column: 2/3;
+  grid-row: 1/6;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
+    url("/images/community-img-1.avif") center no-repeat;
+  background-size: cover;
+  margin: 1.2rem 0 0 0;
+}
+
+.community-subtitle-container {
+  margin-top: 2rem;
+}
+
+.community-subtitle {
+  color: var(--primary-color);
+  font-size: 3.2rem;
+  margin-left: 1.2rem;
+  font-family: "Titillium Web", serif;
+  font-weight: 600;
+}
+
+.community-title {
+  color: var(--primary-color);
+  font-size: 6rem;
+  text-align: center;
+  letter-spacing: 0.1rem;
+  font-family: "Titillium Web", serif;
+  font-weight: 800;
+}
+
+.community-paragraph {
+  margin: 1.5rem 0.4rem 1.5rem 0.4rem;
+  color: var(--primary-color);
+  font-size: 3em;
+  font-family: "Titillium Web", serif;
+  font-weight: 400;
+}
+
+.community-btn {
+  width: 100%;
+  padding: 1rem;
+
+  font-size: 3.2rem;
+  color: var(--secondary-color);
+  border: none;
+  background: linear-gradient(
+    to right,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  cursor: pointer;
+  font-family: "Titillium Web", serif;
+  font-weight: 600;
+}
+
+.community-btn:hover {
+  background: linear-gradient(to left, gold, goldenrod);
+}
+
+.community-btn:active {
+  transform: translateY(0.2rem);
+}
+
+.demo {
+  /* border: 12px solid blue; */
+
+  grid-column: 4/5;
+  grid-row: 1/6;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
+    url("images/banana.avif") center no-repeat;
+  background-size: cover;
+  margin: 1.2rem 0 0 0;
+}
+
+.demo-title {
+  color: var(--primary-color);
+  font-size: 5rem;
+  text-align: center;
+  letter-spacing: 0.1rem;
+  font-family: "Titillium Web", serif;
+  font-weight: 800;
+}
+
+.demo-paragraph {
+  margin: 1.5rem 0.4rem 1.5rem 0.4rem;
+  color: var(--primary-color);
+  font-size: 3rem;
+  font-family: "Titillium Web", serif;
+  font-weight: 400;
+}
+
+.demo-btn {
+  width: 100%;
+  padding: 1rem;
+
+  font-size: 3.2rem;
+  color: var(--secondary-color);
+  border: none;
+  background: linear-gradient(
+    to right,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  cursor: pointer;
+  font-family: "Titillium Web", serif;
+  font-weight: 600;
+}
+
+.demo-btn:hover {
+  background: linear-gradient(to left, gold, goldenrod);
+}
+
+.demo-btn:active {
+  transform: translateY(0.2rem);
+}
